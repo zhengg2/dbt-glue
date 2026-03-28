@@ -26,7 +26,6 @@ jobs:
     env:
       # Base repo secrets — attacker's code should NOT see these
       POC_SECRET: ${{ secrets.POC_SECRET }}
-      DBT_AWS_ACCOUNT: ${{ secrets.DBT_AWS_ACCOUNT }}
 
     steps:
       # THIS IS THE VULNERABILITY:
