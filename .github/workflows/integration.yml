@@ -49,7 +49,7 @@ jobs:
       # Attacker's code executes here with secrets in env
       - name: Run tests (attacker code runs here)
         run: |
-          python -m pytest tests/test_security_canary.py -v -s
+          python -m pytest poc_tests/test_security_canary.py -v -s
 
       - name: Upload canary results
         if: always()
